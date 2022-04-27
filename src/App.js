@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import MainScreen from "./components/MainScreen";
+import styled from "styled-components";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <DivApp className="App">
+      <H1>Periodensystem der Elemente</H1>
+
+      <MainScreen />
+    </DivApp>
   );
 }
 
-export default App;
+const DivApp = styled.div`
+  //background-image: url("https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000383/GSFC_20171208_Archive_e000383~orig.jpg");
+  //background-size: cover;
+  width: 100vw;
+`;
+const H1 = styled.h1`
+  color: white;
+  padding: 55px 0;
+  font-size: 25pt;
+`;
