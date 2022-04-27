@@ -1,4 +1,4 @@
-const elements = [
+export const elements = [
   {
     name: "Hydrogen",
     appearance: "colorless gas",
