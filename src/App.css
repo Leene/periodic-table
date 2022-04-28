@@ -39,3 +39,12 @@ section {
 section:nth-of-type(even) {
   background: #2b8664;
 }
+
+.frow {
+  display: flex;
+  flex-direction: row;
+}
+.fcol {
+  display: flex;
+  flex-direction: column;
+}
